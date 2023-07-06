@@ -30,7 +30,7 @@ while running == True:
     # /// above is the ball \\\ # 
 
     # /// The Pad \\\ # 
-    pygame.draw.rect (window, (120, 200, 255), (enemyx, enemyy)
+    pygame.draw.rect (window, (120, 200, 255), (enemyx, enemyy, 10, 100)
 
 
     # /// Above is The Pad \\\ #
