@@ -48,7 +48,8 @@ while running == True:
     keys = pygame.key.get_pressed()
     if keys[K_UP]:
         delay = delay + 5
-
+        
+    keys = pygame.key.get_pressed()
     if keys[K_DOWN]:
         delay = delay - 5
         
