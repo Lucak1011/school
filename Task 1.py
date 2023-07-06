@@ -7,7 +7,8 @@ window = pygame.display.set_mode((800,500))
 x = 0
 y = 0
 delay = 50
-
+enemyx = 780
+enemyy = 0 
 xspeed = 5
 yspeed = 1
 
@@ -21,10 +22,18 @@ while running == True:
         if event.type == pygame.QUIT:
             running = False
 
+    # /// the ball \\\ # 
     window.fill((255,0,0))
     pygame.draw.rect(window, (120, 200, 255), (x, y, 20, 20))
     x = x + xspeed
     y = y + yspeed
+    # /// above is the ball \\\ # 
+
+    # /// The Pad \\\ # 
+    pygame.draw.rect (window, (120, 200, 255), (enemyx, enemyy)
+
+
+    # /// Above is The Pad \\\ #
 
     if (x > 780):
         xspeed = -xspeed
