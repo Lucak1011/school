@@ -12,11 +12,15 @@ enemyy = 0
 xspeed = 5
 yspeed = 1
 
+playerx = 20
+playery = 200
+playerspeed = 5
+
 # /// DO NOT CHANGE THE ABOVE \\\ #
 
 running = True
 while running == True:
-    pygame.time.delay(delay)
+    pygame.time.delay(10)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -30,8 +34,20 @@ while running == True:
     # /// above is the ball \\\ # 
 
     # /// The Pad \\\ # 
-    pygame.draw.rect (window, (120, 200, 255), (enemyx, enemyy, 10, 100)
+    pygame.draw.rect (window, (120, 200, 255), (enemyx, enemyy, 10, 100))
+    enemyy = y - 50
 
+    # /// E Pad collisions \\\ #
+    if (y > enemyy and y < enemyy + 100):
+        if (x > enemyx - 20):
+            xspeed = -xspeed
+
+    #/// The Player pad \\\#
+    pygame.draw.rect(window,(120,200,255),(playerx,playery,20,100))
+    #/// collision \\\#
+
+    if(y > playerx and y < playery + 100):
+        xspeed = -xspeed
 
     # /// Above is The Pad \\\ #
 
@@ -47,11 +63,11 @@ while running == True:
 # /// KEYBINDS \\\ #
     keys = pygame.key.get_pressed()
     if keys[K_UP]:
-        delay = delay + 5
+        playery = playery - playerspeed
         
     keys = pygame.key.get_pressed()
     if keys[K_DOWN]:
-        delay = delay - 5
+        playery = playery + playerspeed
         
     pygame.display.update()
 
