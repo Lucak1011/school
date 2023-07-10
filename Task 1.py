@@ -47,7 +47,9 @@ while running == True:
     #/// collision \\\#
 
     if(y > playerx and y < playery + 100):
-        xspeed = -xspeed
+        if(x < playerx +20):
+            xspeed = -xspeed
+            
 
     # /// Above is The Pad \\\ #
 
