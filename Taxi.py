@@ -8,7 +8,8 @@ print("Hello, enter the distance you are travelling and the amount of passengers
 Pax = int(input("How many passengers are there?"))
 Dist = int(input("How far are you travelling?"))
 Local = input("Is your job local. Answer with yes or no")
-
+'''End of variables
+'''
 if Local == "no":
     print("You are now being charged a fixed price")
     Dest = input("Where are you going?")
