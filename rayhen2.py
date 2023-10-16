@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import *
 pygame.init
+pritnt("Rayhan")
 
 ##-------------------------------------//Variables//-------------------------------------##
 x = 470
