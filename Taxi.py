@@ -30,5 +30,5 @@ if Local == "no":
 PaxPri = Pax * 2
 DistPrice = Dist * 1.5
 
-Total = DistPrice + PaxPrice
+Total = DistPrice + PaxPri
 print(Total)
