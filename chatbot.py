@@ -16,3 +16,9 @@ elif f == 1:
             n2 = int(input("Enter a number"))
             sum = n1 + n2
             print(sum)
+        if calcfun == "sub":
+            print("Subtraction - enter 2 numbers")
+            n1 = int(input("Enter a number"))
+            n2 = int(input("Enter a number"))
+            sum = n1-n2
+            print(sum)
