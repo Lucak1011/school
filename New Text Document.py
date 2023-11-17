@@ -54,7 +54,7 @@ def bridge():
     print("I'm on my way")
     print("Bye-bye baby")
 v1()
-chrous()
+chorus()
 v2()
 chorus()
 bridge()
