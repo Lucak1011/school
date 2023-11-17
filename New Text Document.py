@@ -35,7 +35,6 @@ def v2():
     print("You might also like")
     print("Toxic Gossip Train")
     print("Colleen Ballinger")
-    print(​"paranoia agent")
     print("Savage Ga$p, Lil Darkie & KAMAARA")
     print("Butchered Tongue")
     print("Hozier")
