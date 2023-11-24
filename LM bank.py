@@ -26,9 +26,9 @@ def mainMenu():
 #           The subroutine should use IF, ELSE and ELIF to run the subroutines checkBalance, depositMoney and withdrawMoney depending on the choice they have made
 #           If the user enters something that isn't one of the listed numbers, then they are asked to choose again - HINT run the menuChoice function again
 def menuChoice():
-  userMenuChoice = input("choose: 1, 2, 3, or 9")
+  userMenuChoice = int(input("choose: 1, 2, 3, or 9"))
   if userMenuChoice == 1:
-    checkBanlance()
+    checkBalance()
   elif userMenuChoice == 2:
     depositMoney()
   elif userMenuChoice == 3:
@@ -58,7 +58,7 @@ def depositMoney():
 #           The program will then output their new balance to confirm the transaction has been completed successfully
 def withdrawMoney():
     global accountBalance
-    witham = init(input("Enter an amount to withdraw"))
+    witham = int(input("Enter an amount to withdraw"))
     accountBalance = accountBalance - witham
 
 # DON'T TOUCH - This code will run your program for you once you have completed the tasks above
