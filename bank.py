@@ -23,16 +23,10 @@ def printWelcome():
 #           3 - Withdraw money
 #           9 - Quit
 def mainMenu():
-    option = input("Enter an option")
-    
-    if option == "1":
-        print(global accountBalance)
-    elif option == "2":
-        depam = int(input("How much money do you want to deposit"))
-        global accountBalance = global accountBalance + depam
-    elif option == "3":
-        witham = int(input("Enter an amount to withdraw"))
-        global accountBalance = global accountBalance - witham
+  print("Option 1 - check balance")
+  print("Option 2 - deposit money")
+  print("Option 3 - Withdraw money")
+  print("Option 9 - exit")
         
 
 
@@ -40,9 +34,19 @@ def mainMenu():
 #           The customers choice should be stored in a variable called userMenuChoice
 #           The subroutine should use IF, ELSE and ELIF to run the subroutines checkBalance, depositMoney and withdrawMoney depending on the choice they have made
 #           If the user enters something that isn't one of the listed numbers, then they are asked to choose again - HINT run the menuChoice function again
+def menuChoice():
+  opt = int(input("Enter an option"))
+  if opt == 1:
+    checkBalance()
+  elif opt == 2:
+    depositMoney()
+  elif opt == 3:
+    withdrawMoney()
 
 
 # Task 5:   Write a subroutine called checkBalance that outputs the variable 'accountBalance' of the account
+def checkBalance():
+    print(accountBalance)
 
 
 
@@ -50,6 +54,8 @@ def mainMenu():
 #           The program will then output their new balance to confirm the transaction has been completed successfully
 def depositMoney():
     global accountBalance
+    depam = int(input("Enter an amount to deposit"))
+    accountBalance = accountBalance + depam
     
 
 # Task 7:   Add to the subroutine called withdrawMoney that allows the customer to take money from their balance
@@ -57,6 +63,8 @@ def depositMoney():
 #           The program will then output their new balance to confirm the transaction has been completed successfully
 def withdrawMoney():
     global accountBalance
+    witham = int(input("Enter an amount to withdraw")
+    accountBalance = accountBalance - witham
     
 
 # DON'T TOUCH - This code will run your program for you once you have completed the tasks above
