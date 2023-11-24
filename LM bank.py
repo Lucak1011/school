@@ -47,9 +47,10 @@ def checkBalance():
 # Task 6:   Add to the subroutine called depositMoney that allows the customer to add money to their balance
 #           The program will then output their new balance to confirm the transaction has been completed successfully
 def depositMoney():
-  deposit = int(input("how much money do you wish to deposit?"))
-  
     global accountBalance
+    depam = int(input("how much money do you wish to deposit?"))
+    accountBalance = accountBalance + depam
+  
     
 
 # Task 7:   Add to the subroutine called withdrawMoney that allows the customer to take money from their balance
@@ -57,7 +58,8 @@ def depositMoney():
 #           The program will then output their new balance to confirm the transaction has been completed successfully
 def withdrawMoney():
     global accountBalance
-    
+    witham = init(input("Enter an amount to withdraw"))
+    accountBalance = accountBalance - witham
 
 # DON'T TOUCH - This code will run your program for you once you have completed the tasks above
 printWelcome()
