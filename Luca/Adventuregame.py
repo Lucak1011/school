@@ -43,5 +43,19 @@ while blattack == True:
     if bl_health == 0:
       blattack = False
 print("Village 1 complete")
+print("You continue to the next Village")
+print("Welcome to village 2")
+print("Here you find that there is a little bit more of civilisation")
+print("You also can choose different paths here")
+choice1 = input("To your right, you continue a little deeper in to the village, or to the left, there is a forest. No matter which way you go there is always the possibility you run in to an enemy")
+if choice1 == right:
+  print("Welcome to the village market")
+  print("There is a enemy hiding somewhere, your challenge is to find them and defeat them")
+  print("You could either walk around and find them, or wait for them to find you")
+  choice2 = input("Enter 'wait' or 'walkaround'"):
+  if choice2 == "wait":
+    print("You wait around for a while and there is no sign of the enemy, you continue")
+  if choice2 == "walkaround":
+    print("You find the monster, he catches you by surprise and you have no time to attack, you die")
   
 
