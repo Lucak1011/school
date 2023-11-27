@@ -19,7 +19,11 @@ def printWelcome():
 #           3 - Withdraw money
 #           9 - Quit
 def mainMenu():
-  print("Your choices are: 1 - Check balance, 2 - Deposit money, 3 - Withdraw money, or 9 - Consider your self a waste of time and space(Quit)")
+   print("Your choices are:")
+  print("1 - Check balance")
+  print("2 - Deposit money")
+  print("3 - Withdraw money")
+  print("9 - Consider your self a waste of time and space(Quit)")
 
 # Task 4:   Write a subroutine called menuChoice that asks the customer to choose a number from the menu
 #           The customers choice should be stored in a variable called userMenuChoice
