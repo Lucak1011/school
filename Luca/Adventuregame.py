@@ -3,14 +3,29 @@ def blade_light():
   print("Blade Light")
   print("Blade light is a low level enemy who should be fairly easy to defeat")
   print("Use your attacks wisely as these only regenerate each level")
-  global bl_health ==  100
+  global bl_health
+  bl_health = 100
 
-
+def pepsiman():
+    print("You meet pepsi man")
+    reply = input("Do you reply to Pepsi Man, Y or N")
+    if reply == "Y":
+        print("Pepsi Man gives you a magic key")
+        global magic_key
+        magic_key = True
+    else:
+        print("Pepsi man explodes and you die")
+def colonel_sanders():
+    print("Welcome to KFC Land lad")
+    print("Answer the next 3 questions correctly to proceed")
+    
 
 
 #/END CHARACTER FUNCTION\
 #Main Character Variables
-global mc_roundhousekick = 2
+global mc_roundhousekick
+
+mc_roundhousekick = 2
 
 
 
@@ -44,4 +59,17 @@ while blattack == True:
       blattack = False
 print("Village 1 complete")
   
-
+#village 2
+print("Welcome to village two")
+path = input("You can go L or R")
+if path == "L":
+    pepsiman()
+if path == "R":
+    print("You go right")
+    colonel_sanders()
+    q1 = input("What is KFC's slogan")
+    if q1 == "finger lickin good":
+        print("Correct")
+        q2 = input("Who is Coelnol 
+    else:
+        print("Wrong. Bye bye")
