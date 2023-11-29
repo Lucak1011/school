@@ -79,6 +79,7 @@ if path == "R":
            q3.lower()
            if q3 == "Y":
               print("Success")
+              print("You die anyway. Get good")
            else:
               print("Wrong. Bye bye")
         else:
