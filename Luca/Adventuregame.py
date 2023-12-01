@@ -70,6 +70,11 @@ if path == "R":
     q1 = input("What is KFC's slogan")
     if q1 == "finger lickin good":
         print("Correct")
-        q2 = input("Who is Coelnol 
+        q2 = input("Who is Colenol Sanders?")
+        if q2 == "KFC man":
+          print("Correct - proceed.")
+          q3 = input("Is Rayhan Rayhan?")
+          if q3 == "Y":
+            print("Correct, proceed
     else:
         print("Wrong. Bye bye")
