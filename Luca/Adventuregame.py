@@ -18,7 +18,11 @@ def pepsiman():
 def colonel_sanders():
     print("Welcome to KFC Land lad")
     print("Answer the next 3 questions correctly to proceed")
-    
+
+def harry_potter():
+  print("Harry Potter has arrived")
+  print("You must defeat Albus Dumbledore to pass")
+  print("He has a power level of 9")
 
 
 #/END CHARACTER FUNCTION\
@@ -75,6 +79,15 @@ if path == "R":
           print("Correct - proceed.")
           q3 = input("Is Rayhan Rayhan?")
           if q3 == "Y":
-            print("Correct, proceed
+            print("Correct, proceed")
+            print("You completed the village, well done")
+            print("Welcome to the third village (Village 3) ")
+            
+            
+    
+    
+    
     else:
         print("Wrong. Bye bye")
+
+
