@@ -1,3 +1,6 @@
+#inputty stuff
+from random import randint
+
 #character description functions
 def blade_light():
   print("Blade Light")
@@ -68,6 +71,9 @@ print("Welcome to village two")
 path = input("You can go L or R")
 if path == "L":
     pepsiman()
+    print("You then get attacked by an evil gremlin")
+    print("You are now dead")
+
 if path == "R":
     print("You go right")
     colonel_sanders()
@@ -83,11 +89,39 @@ if path == "R":
             print("You completed the village, well done")
             print("Welcome to the third village (Village 3) ")
             
+            print("In this village - you will recieve a screwdriver")
+            global screwdriver
+            screwdriver = 1
+            print("You have the option if going Left or heading towards an abandoned house")
+            dir = input("House or Left")
+            if dir == "Left":
+              print("You exit the village safely")
+            elif dir == "House":
+              print("Welcome to the abandoned house")
+              print("There is a 50 50 chance of being able to successfully enter the house")
+              n1 = randint(1,2)
+              print("You try the screwdriver on the lock")
+              if n1 == 1:
+                print("Welcome to the house.")
+                screwdriver = 0 
+                print("There is a staircase that goes to the basement? Do you go down it?")
+                dir = input("Do you go down the staircase? Y or N")
+                if dir == "N":
+                  print("You continue throught the house, there is a man, do you speak to the man?")
+                  ans = input("Do you speak to the man, Y or N")
+                  if ans == "Y":
+                    print("The man decides he wants to give you a tenner, enjoy")
+                    print("Carry on")
+                    print("You meet a man who is called Rick")
+                    print("Rick makes a pledge to you:")
+                    print("Rick will never give you up")
+                    print("He will never let you down")
+                    print("He will never turn around and desert you")
+                                
+              
+              else:
+                print("Death, the door shoots you for breaking and entering (B&E)")
             
-    
-    
     
     else:
         print("Wrong. Bye bye")
-
-
