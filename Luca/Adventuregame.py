@@ -1,3 +1,11 @@
+
+'''
+Some of these things kinda work. Some don't. Didn't have the time to do as much as I wanted to.
+In the top bar of this file, there is a download button, it will download as a python file, you can either drag and drop it into the virtualbox files folder OR open it in notepad.
+
+'''
+
+
 #inputty stuff
 from random import randint
 
