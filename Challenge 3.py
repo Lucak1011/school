@@ -19,5 +19,7 @@ while "pageadd" == True:
     elif pagediff == "Difficult":
         print("This page is difficult")
         diff = diff + 100
+        division_by_zero = 1 / 0
+
 
 print(total)
